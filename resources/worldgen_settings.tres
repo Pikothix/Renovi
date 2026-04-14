@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="WorldGenSettings" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="WorldGenSettings" format=3 uid="uid://c330noai52jsl"]
 
-[ext_resource type="Script" path="res://scripts/worldgen_settings.gd" id="1"]
+[ext_resource type="Script" uid="uid://vi1m3luutfgh" path="res://scripts/worldgen_settings.gd" id="1"]
 
 [resource]
 script = ExtResource("1")

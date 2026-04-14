@@ -76,7 +76,7 @@ func create_biome_texture() -> ImageTexture:
 				BIOME_DIRT:
 					encoded_red = 0.6666667
 				BIOME_WATER:
-					encoded_red = 1.0
+					encoded_red = 2.0
 			image.set_pixel(x, y, Color(encoded_red, 0.0, 0.0, 1.0))
 
 	return ImageTexture.create_from_image(image)

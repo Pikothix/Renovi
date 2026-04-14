@@ -1,18 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsgh3k6327g1c"]
+[gd_scene format=3 uid="uid://bsgh3k6327g1c"]
 
 [ext_resource type="Script" uid="uid://ce3huuatpbpgw" path="res://scripts/world.gd" id="1"]
 [ext_resource type="Script" uid="uid://cj4x66evldmsw" path="res://scripts/chunk_manager.gd" id="2"]
-[ext_resource type="Resource" path="res://resources/worldgen_settings.tres" id="3"]
+[ext_resource type="Resource" uid="uid://c330noai52jsl" path="res://resources/worldgen_settings.tres" id="3"]
 [ext_resource type="PackedScene" path="res://scenes/interior_overlay.tscn" id="4"]
 
 [node name="World" type="Node2D" unique_id=441868156]
 script = ExtResource("1")
+generated_house_chance = 1.0
+generated_house_max_modules = 1
 
 [node name="ChunkManager" type="Node2D" parent="." unique_id=1428910837]
 script = ExtResource("2")
 worldgen_settings = ExtResource("3")
 show_chunk_borders = false
 
-[node name="Houses" type="Node2D" parent="."]
+[node name="Houses" type="Node2D" parent="." unique_id=1973682405]
 
-[node name="InteriorOverlay" parent="." instance=ExtResource("4")]
+[node name="InteriorOverlay" parent="." unique_id=1983508995 instance=ExtResource("4")]
