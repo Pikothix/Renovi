@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WorldGenSettings" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/worldgen_settings.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+noise_type = 2
+landmass_frequency = 0.015
+moisture_frequency = 0.069
+temperature_frequency = 0.019
